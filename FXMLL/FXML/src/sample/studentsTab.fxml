@@ -1,0 +1,38 @@
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Tab?>
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<Tab text="Students">
+    <content>
+        <AnchorPane minHeight="10.0" minWidth="10.0" prefHeight="424.0" prefWidth="361.0">
+
+        <TableView minHeight="10.0" minWidth="10.0" prefHeight="424.0" prefWidth="361.0">
+            <columns>
+                <TableColumn cellFactory="" text="Mark">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="mark"></PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="First Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="firstName"></PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Last Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="lastName"></PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Age">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="age"></PropertyValueFactory>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+
+        </AnchorPane>
+    </content>
+</Tab>
